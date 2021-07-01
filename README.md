@@ -1,4 +1,4 @@
-## This is Flutter project to get started with a app in short. All the necessary files are already and full customizable.
+## This is Flutter project to get started with a app in short time. All the necessary files are already and full customizable.
 
 # Steps:
     1) Clone the repository in your machine.
