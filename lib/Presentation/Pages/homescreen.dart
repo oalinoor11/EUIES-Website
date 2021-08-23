@@ -38,36 +38,38 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ),
-              Column(
-                children: [Container(),
-                  Container(decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(5)),
-                    height: 500,
-                    width: 400,
-                      child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [Container(),
-                        const Image(
-                          image: AssetImage("assets/images/flag.png"),
-                          width: double.infinity,
+              SingleChildScrollView(scrollDirection: Axis.horizontal,
+                child: Column(
+                  children: [Container(),
+                    Container(decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(5)),
+                      height: 500,
+                      width: 400,
+                        child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [Container(),
+                          const Image(
+                            image: AssetImage("assets/images/flag.png"),
+                            width: double.infinity,
+                          ),
+                              SizedBox(height: 15,),
+                              Row(
+                                children: [
+                                  SizedBox(width: 15,),
+                                  Text('Study Abroad', style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),),
+                                ],
+                              ),
+                              SizedBox(height: 15,),
+                              Row(
+                                children: [
+                                  SizedBox(width: 15,),
+                                  Text('We provide expert services for students to fulfill their dreams of obtaining foreign education. Our students are placed all around the globe and we are proud to have helped students get admitted into top universities in destinations such as USA, Europe, Australia and more.',
+                                    style: TextStyle(color: Colors.black, fontSize: 20,),textAlign: TextAlign.start,),
+                                ],
+                              ),
+                        ],
                         ),
-                            SizedBox(height: 15,),
-                            Row(
-                              children: [
-                                SizedBox(width: 15,),
-                                Text('Study Abroad', style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),),
-                              ],
-                            ),
-                            SizedBox(height: 15,),
-                            Row(
-                              children: [
-                                SizedBox(width: 15,),
-                                Text('We provide expert services for students to fulfill their dreams of obtaining foreign education. Our students are placed all around the globe and we are proud to have helped students get admitted into top universities in destinations such as USA, Europe, Australia and more.',
-                                  style: TextStyle(color: Colors.black, fontSize: 20,),textAlign: TextAlign.start,),
-                              ],
-                            ),
-                      ],
                       ),
-                    ),
-                ],
+                  ],
+                ),
               ),
         ],
         ),
