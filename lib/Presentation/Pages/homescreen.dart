@@ -54,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 padding: const EdgeInsets.all(10.0),
                                 child: Text('Study Abroad', style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),),
                               ),
-                              SizedBox(height: 80,),
+                              SizedBox(height: 8,),
                               Padding(
                                 padding: const EdgeInsets.all(10.0),
                                 child: Text('We provide expert services for students to fulfill their dreams of obtaining foreign education. Our students are placed all around the globe and we are proud to have helped students get admitted into top universities in destinations such as USA, Europe, Australia and more.',
