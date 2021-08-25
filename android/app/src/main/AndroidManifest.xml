@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wonderkid.initial_app">
+    package="com.example.bike_sales">
    <application
-        android:label="initial_app"
+        android:label="bike_sales"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

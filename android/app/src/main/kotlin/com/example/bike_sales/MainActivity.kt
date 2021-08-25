@@ -1,4 +1,4 @@
-package com.wonderkid.initial_app
+package com.example.bike_sales
 
 import io.flutter.embedding.android.FlutterActivity
 

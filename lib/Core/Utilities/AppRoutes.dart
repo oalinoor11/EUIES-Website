@@ -1,5 +1,5 @@
+import 'package:bike_sales/Presentation/Pages/SplashScreen/splash_screen.dart';
 import 'package:get/get.dart';
-import 'package:initial_app/Presentation/Pages/exportpages.dart';
 
 class AppRoutes{
   static String INITIAL = "/";
