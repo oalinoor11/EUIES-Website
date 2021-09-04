@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: "INITIAL APP",
       translations: Language(),
-      locale: Locale('en', 'US'),
-      fallbackLocale: Locale('en', 'US'),
+      locale: AppLocales.ENGLISH,
+      fallbackLocale: AppLocales.ENGLISH,
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
       getPages: AppRoutes.routes,
