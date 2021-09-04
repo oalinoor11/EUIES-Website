@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       home: SplashScreen(),
       getPages: AppRoutes.routes,
       initialRoute: AppRoutes.INITIAL,
-      theme: AppTheme.theme,
+      theme: AppTheme.theme(),
     );
   }
 }
