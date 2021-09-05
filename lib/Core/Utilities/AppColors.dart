@@ -10,4 +10,6 @@ class AppColours{
   static const Color BACKGROUND = Color(0xffEFEFEF);
 
   static Color SHADOWCOLOR = Color(0xff000000).withOpacity(0.1);
+
+  static Color BLACK = Colors.black;
 }

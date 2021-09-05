@@ -11,7 +11,7 @@ List<Widget> AppMenuItems() {
       child: TextButton(
           onPressed: () {},
           child: Text(
-            "Bike For Sale",
+            "Bike Information",
             style: Get.textTheme.button,
           )),
     ),
@@ -20,7 +20,7 @@ List<Widget> AppMenuItems() {
       child: TextButton(
           onPressed: () {},
           child: Text(
-            "Showroom",
+            "Compare",
             style: Get.textTheme.button,
           )),
     ),
@@ -29,7 +29,7 @@ List<Widget> AppMenuItems() {
       child: TextButton(
           onPressed: () {},
           child: Text(
-            "Sell My Bike",
+            "Contest",
             style: Get.textTheme.button,
           )),
     ),

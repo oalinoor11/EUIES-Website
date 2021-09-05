@@ -10,6 +10,10 @@ class AppTheme{
         color: AppColours.WHITE,
         fontWeight: FontWeight.bold
       ),
+      bodyText1: TextStyle(
+          color: AppColours.WHITE,
+          fontWeight: FontWeight.bold
+      ),
     ),
     appBarTheme: AppBarTheme(
       backgroundColor: Colors.black54,

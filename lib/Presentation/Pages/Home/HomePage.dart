@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
         setState(() {
           showFloatingButton = true;
         });
-      }else{
+      } else {
         setState(() {
           showFloatingButton = false;
         });
@@ -78,6 +78,41 @@ class _HomePageState extends State<HomePage> {
             AppConstrains.height80,
             NewsAndReviewsSection(),
             AppConstrains.height80,
+            Container(
+              child: Column(
+                children: [
+                  Container(
+                    color: AppColours.BLACK,
+                    padding:
+                        EdgeInsets.symmetric(horizontal: context.width * 0.2),
+                    child: Row(
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Bikes for sale",
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .headline3!
+                                  .copyWith(color: AppColours.WHITE),
+                            ),
+                            TextButton(
+                              onPressed: () {},
+                              child: Text("Used bikes for sale"),
+                            ),
+                            TextButton(
+                              onPressed: () {},
+                              child: Text("New bikes for sale"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
