@@ -63,6 +63,7 @@ List<Widget> AppMenuItems() {
             "Sign In",
             style: Get.textTheme.button,
           )),
+
     ),
     Padding(
       padding: const EdgeInsets.all(10.0),
