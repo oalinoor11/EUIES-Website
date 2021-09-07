@@ -15,7 +15,7 @@ class _JumboSectionState extends State<JumboSection> {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: context.width*0.2),
       decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage("assets/images/background/Menu_background.png"),fit: BoxFit.cover)
+          image: DecorationImage(image: AssetImage("assets/images/background/Menu_background.png"),fit: BoxFit.cover, alignment: Alignment.centerLeft)
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

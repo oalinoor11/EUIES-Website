@@ -20,28 +20,57 @@ class _CategorySectionState extends State<CategorySection> {
         color: AppColours.WHITE,
         boxShadow: [
           BoxShadow(
-              color: AppColours.SHADOWCOLOR,
-              offset: Offset(0, 0),
-              blurRadius: 9)
+            color: AppColours.SHADOWCOLOR,
+            offset: Offset(0, 0),
+            blurRadius: 9,
+          )
         ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AppConstrains.height20,
-          Padding(
-            padding:
-            EdgeInsets.symmetric(horizontal: context.width * 0.2),
+          context.width > 720 ? Padding(
+            padding: EdgeInsets.symmetric(horizontal: context.width * 0.2),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                Expanded(
-                  child: Text(
-                    "Explore bikes by category",
-                    style: Theme.of(context).textTheme.headline4,
-                    overflow: TextOverflow.ellipsis,
-                  ),
+                Text(
+                  "Explore bikes by category",
+                  style: context.width > 720 ? Theme.of(context).textTheme.headline4 : Theme.of(context).textTheme.headline6,
+                  softWrap: true,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "View all categories",
+                      softWrap: true,
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyText2!
+                          .copyWith(color: AppColours.RED),
+                    ),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      size: 16,
+                      color: AppColours.RED,
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ) : Padding(
+            padding: EdgeInsets.symmetric(horizontal: context.width * 0.2),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Explore bikes by category",
+                  style: context.width > 720 ? Theme.of(context).textTheme.headline4 : Theme.of(context).textTheme.headline6,
+                  softWrap: true,
+                  textAlign: TextAlign.center,
                 ),
                 Row(
                   children: [
@@ -49,18 +78,29 @@ class _CategorySectionState extends State<CategorySection> {
                       child: Text(
                         "View all categories",
                         softWrap: true,
-                        style: Theme.of(context).textTheme.bodyText2!.copyWith(color: AppColours.RED),
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyText2!
+                            .copyWith(color: AppColours.RED),
                       ),
                     ),
-                    Icon(Icons.arrow_forward_ios, size: 16,color: AppColours.RED,),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      size: 16,
+                      color: AppColours.RED,
+                    ),
                   ],
-                )
+                ),
               ],
             ),
           ),
           AppConstrains.height40,
           GFItemsCarousel(
-            rowCount: context.width >= 1080 ? 4 : context.width > 720 ? 2 : 1,
+            rowCount: context.width >= 1080
+                ? 4
+                : context.width > 720
+                    ? 2
+                    : 1,
             children: [
               BikeCategoryItem("Learner"),
               BikeCategoryItem("Cruisers"),
