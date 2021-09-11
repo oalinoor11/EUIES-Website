@@ -15,34 +15,34 @@ class _JumboSectionState extends State<JumboSection> {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: context.width*0.2),
       decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage("assets/images/background/Menu_background.png"),fit: BoxFit.cover, alignment: Alignment.centerLeft)
+          image: DecorationImage(image: AssetImage("assets/images/background/studyineurope.png"),fit: BoxFit.cover, alignment: Alignment.centerLeft)
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text("Find Your Next Bike", style: Theme.of(context).textTheme.headline4!.copyWith(color: AppColours.WHITE),),
-          GlassmorphicContainer(
-            borderRadius: 20,
-            blur: 5,
-            alignment: Alignment.bottomCenter,
-            border: 2,
-            linearGradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Colors.black26,
-                  Colors.black26,
-                ],
-                stops: [
-                  0.1,
-                  1,
-                ]),
-            borderGradient: LinearGradient(colors: [Colors.transparent, Colors.transparent]),
-            width: 660,
-            height: 115,
-            child: null,
-          ),
+          // Text("Find Your Next Bike", style: Theme.of(context).textTheme.headline4!.copyWith(color: AppColours.WHITE),),
+          // GlassmorphicContainer(
+          //   borderRadius: 20,
+          //   blur: 5,
+          //   alignment: Alignment.bottomCenter,
+          //   border: 2,
+          //   linearGradient: LinearGradient(
+          //       begin: Alignment.topLeft,
+          //       end: Alignment.bottomRight,
+          //       colors: [
+          //         Colors.black26,
+          //         Colors.black26,
+          //       ],
+          //       stops: [
+          //         0.1,
+          //         1,
+          //       ]),
+          //   borderGradient: LinearGradient(colors: [Colors.transparent, Colors.transparent]),
+          //   width: 660,
+          //   height: 115,
+          //   child: null,
+          // ),
         ],
       ),
       width: double.infinity,

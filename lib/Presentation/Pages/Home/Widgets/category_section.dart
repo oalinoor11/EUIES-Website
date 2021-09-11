@@ -37,27 +37,9 @@ class _CategorySectionState extends State<CategorySection> {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Text(
-                  "Explore bikes by category",
+                  "Our Dedicated Services",
                   style: context.width > 720 ? Theme.of(context).textTheme.headline4 : Theme.of(context).textTheme.headline6,
                   softWrap: true,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "View all categories",
-                      softWrap: true,
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodyText2!
-                          .copyWith(color: AppColours.RED),
-                    ),
-                    Icon(
-                      Icons.arrow_forward_ios,
-                      size: 16,
-                      color: AppColours.RED,
-                    ),
-                  ],
                 ),
               ],
             ),
@@ -67,29 +49,10 @@ class _CategorySectionState extends State<CategorySection> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Explore bikes by category",
+                  "Our Dedicated Services",
                   style: context.width > 720 ? Theme.of(context).textTheme.headline4 : Theme.of(context).textTheme.headline6,
                   softWrap: true,
                   textAlign: TextAlign.center,
-                ),
-                Row(
-                  children: [
-                    Container(
-                      child: Text(
-                        "View all categories",
-                        softWrap: true,
-                        style: Theme.of(context)
-                            .textTheme
-                            .bodyText2!
-                            .copyWith(color: AppColours.RED),
-                      ),
-                    ),
-                    Icon(
-                      Icons.arrow_forward_ios,
-                      size: 16,
-                      color: AppColours.RED,
-                    ),
-                  ],
                 ),
               ],
             ),

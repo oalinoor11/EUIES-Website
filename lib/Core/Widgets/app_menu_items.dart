@@ -11,7 +11,7 @@ List<Widget> AppMenuItems() {
       child: TextButton(
           onPressed: () {},
           child: Text(
-            "Bike Information",
+            "Study Abroad",
             style: Get.textTheme.button,
           )),
     ),
@@ -20,7 +20,7 @@ List<Widget> AppMenuItems() {
       child: TextButton(
           onPressed: () {},
           child: Text(
-            "Compare",
+            "Services",
             style: Get.textTheme.button,
           )),
     ),
@@ -29,7 +29,7 @@ List<Widget> AppMenuItems() {
       child: TextButton(
           onPressed: () {},
           child: Text(
-            "Contest",
+            "Contact",
             style: Get.textTheme.button,
           )),
     ),
@@ -43,43 +43,12 @@ List<Widget> AppMenuItems() {
           )),
     ),
     AppConstrains.width40,
-    AppConstrains.width40,
-    GFIconBadge(
-      padding: EdgeInsets.zero,
-      child: Icon(
-        Icons.notifications,
-        size: 20,
-      ),
-      counterChild: GFBadge(
-        child: Text("12"),
-      ),
-      position: GFBadgePosition.topEnd(top: 40),
-    ),
-    Padding(
-      padding: const EdgeInsets.all(10.0),
-      child: TextButton(
-          onPressed: () {},
-          child: Text(
-            "Sign In",
-            style: Get.textTheme.button,
-          )),
-
-    ),
-    Padding(
-      padding: const EdgeInsets.all(10.0),
-      child: TextButton(
-          onPressed: () {},
-          child: Text(
-            "Join",
-            style: Get.textTheme.button,
-          )),
-    ),
     Padding(
       padding: const EdgeInsets.symmetric(vertical: 40.0),
       child: GFButton(
         onPressed: () {},
-        color: AppColours.LIGHTGREEN,
-        text: "Sell my bike",
+        color: AppColours.RED,
+        text: "Apply for Scholarship",
         size: 30,
         padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5),
         shape: GFButtonShape.pills,
@@ -99,7 +68,7 @@ List<Widget> AppDrawerItems() {
       child: TextButton(
           onPressed: () {},
           child: Text(
-            "Bike For Sale",
+            "Study Abroad",
             style: Get.textTheme.button,
           )),
     ),
@@ -108,7 +77,7 @@ List<Widget> AppDrawerItems() {
       child: TextButton(
           onPressed: () {},
           child: Text(
-            "Showroom",
+            "Services",
             style: Get.textTheme.button,
           )),
     ),
@@ -117,7 +86,7 @@ List<Widget> AppDrawerItems() {
       child: TextButton(
           onPressed: () {},
           child: Text(
-            "Sell My Bike",
+            "Contact",
             style: Get.textTheme.button,
           )),
     ),
@@ -130,40 +99,10 @@ List<Widget> AppDrawerItems() {
             style: Get.textTheme.button,
           )),
     ),
-    AppConstrains.width40,
-    GFIconBadge(
-      padding: EdgeInsets.zero,
-      child: Icon(
-        Icons.notifications,
-        size: 20,
-        color: AppColours.WHITE,
-      ),
-      counterChild: GFBadge(
-        child: Text("12"),
-      ),
-    ),
-    Padding(
-      padding: const EdgeInsets.all(10.0),
-      child: TextButton(
-          onPressed: () {},
-          child: Text(
-            "Sign In",
-            style: Get.textTheme.button,
-          )),
-    ),
-    Padding(
-      padding: const EdgeInsets.all(10.0),
-      child: TextButton(
-          onPressed: () {},
-          child: Text(
-            "Join",
-            style: Get.textTheme.button,
-          )),
-    ),
     GFButton(
       onPressed: () {},
-      color: AppColours.LIGHTGREEN,
-      text: "Sell my bike",
+      color: AppColours.RED,
+      text: "Apply for Scholarship",
       size: 30,
       padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5),
       shape: GFButtonShape.pills,
