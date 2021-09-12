@@ -1,4 +1,4 @@
-import 'package:bike_sales/Core/Utilities/exportutilities.dart';
+import 'package:gweb/Core/Utilities/exportutilities.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 

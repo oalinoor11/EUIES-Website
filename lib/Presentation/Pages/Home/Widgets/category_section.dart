@@ -1,5 +1,5 @@
-import 'package:bike_sales/Core/Utilities/exportutilities.dart';
-import 'package:bike_sales/Presentation/Pages/Home/Widgets/bike_carousel_item.dart';
+import 'package:gweb/Core/Utilities/exportutilities.dart';
+import 'package:gweb/Presentation/Pages/Home/Widgets/bike_carousel_item.dart';
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:get/get.dart';

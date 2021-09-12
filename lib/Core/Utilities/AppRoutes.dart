@@ -1,4 +1,4 @@
-import 'package:bike_sales/Presentation/Pages/exportpages.dart';
+import 'package:gweb/Presentation/Pages/exportpages.dart';
 import 'package:get/get.dart';
 
 class AppRoutes{

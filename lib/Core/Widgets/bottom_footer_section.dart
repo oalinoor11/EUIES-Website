@@ -1,5 +1,5 @@
-import 'package:bike_sales/Core/Utilities/exportutilities.dart';
-import 'package:bike_sales/Core/Widgets/exportwidgets.dart';
+import 'package:gweb/Core/Utilities/exportutilities.dart';
+import 'package:gweb/Core/Widgets/exportwidgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';

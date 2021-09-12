@@ -1,4 +1,4 @@
-import 'package:bike_sales/Core/Utilities/AppColors.dart';
+import 'package:gweb/Core/Utilities/AppColors.dart';
 import 'package:flutter/material.dart';
 import 'package:glassmorphism/glassmorphism.dart';
 import 'package:get/get.dart';
