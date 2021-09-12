@@ -37,7 +37,7 @@ class _BottomFooterSectionState extends State<BottomFooterSection> {
     Get.context!.width <= 720 ? AppConstrains.height5 : SizedBox.shrink(),
     Container(
       child: Text(
-        "© carsales.com Limited 1999-2021",
+        "© euies.de Limited 2021",
         style: TextStyle(color: Colors.white),
         softWrap: true,
       ),

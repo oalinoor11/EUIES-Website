@@ -6,8 +6,8 @@ class AppName extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      "assets/images/Logo/logo.png",
-      height: 60,
+      "assets/images/Logo/logowithname.png",
+      height: 170,
     );
   }
 }

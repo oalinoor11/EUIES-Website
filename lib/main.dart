@@ -15,14 +15,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: "INITIAL APP",
+      title: "EUIES International Education Service",
       translations: Language(),
       locale: AppLocales.ENGLISH,
       fallbackLocale: AppLocales.ENGLISH,
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      // home: HomePage(),
       getPages: AppRoutes.routes,
-      initialRoute: AppRoutes.INITIAL,
+      initialRoute: AppRoutes.HOME,
       theme: AppTheme.theme(),
     );
   }
