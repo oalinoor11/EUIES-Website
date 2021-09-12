@@ -40,6 +40,7 @@ class _CategorySectionState extends State<CategorySection> {
                   "Our Dedicated Services",
                   style: context.width > 720 ? Theme.of(context).textTheme.headline4 : Theme.of(context).textTheme.headline6,
                   softWrap: true,
+                  textAlign: TextAlign.start,
                 ),
               ],
             ),
