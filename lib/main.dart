@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
       // home: HomePage(),
       getPages: AppRoutes.routes,
       initialRoute: AppRoutes.HOME,
+
       theme: AppTheme.theme(),
     );
   }
