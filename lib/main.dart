@@ -1,10 +1,13 @@
+import 'package:EUIES_Web/Core/Utilities/AppRoutes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'Core/Language/Language.dart';
+import 'Core/Utilities/AppTheme.dart';
 import 'Core/Utilities/exportutilities.dart';
 import 'Presentation/Pages/exportpages.dart';
+import 'Presentation/Pages/homescreen.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,6 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: "EUIES International Education Service",
+
       translations: Language(),
       locale: AppLocales.ENGLISH,
       fallbackLocale: AppLocales.ENGLISH,
@@ -25,6 +29,7 @@ class MyApp extends StatelessWidget {
       initialRoute: AppRoutes.HOME,
 
       theme: AppTheme.theme(),
+
     );
   }
 }

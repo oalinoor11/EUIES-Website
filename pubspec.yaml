@@ -1,4 +1,5 @@
 name: gweb
+
 description: A new Flutter application.
 publish_to: 'none'
 version: 1.0.0+1
@@ -28,6 +29,7 @@ flutter:
     - assets/images/background/
     - assets/images/Logo/
     - assets/images/bikes/
+
 
   # fonts:
   #   - family: Schyler
