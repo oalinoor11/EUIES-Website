@@ -10,6 +10,7 @@ class AppConstrains{
   static SizedBox height30 = SizedBox(height: 30,);
   static SizedBox height35 = SizedBox(height: 35,);
   static SizedBox height40 = SizedBox(height: 40,);
+  static SizedBox height80 = SizedBox(height: 80,);
   ///Widths
   static SizedBox width5 = SizedBox(width: 5,);
   static SizedBox width10 = SizedBox(width: 10,);
@@ -19,5 +20,6 @@ class AppConstrains{
   static SizedBox width30 = SizedBox(width: 30,);
   static SizedBox width35 = SizedBox(width: 35,);
   static SizedBox width40 = SizedBox(width: 40,);
+  static SizedBox width80 = SizedBox(width: 80,);
 
 }

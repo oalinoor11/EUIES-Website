@@ -18,15 +18,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: "EUIES Web",
+      title: "EUIES International Education Service",
+
       translations: Language(),
-      locale: Locale('en', 'US'),
-      fallbackLocale: Locale('en', 'US'),
+      locale: AppLocales.ENGLISH,
+      fallbackLocale: AppLocales.ENGLISH,
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      // home: HomePage(),
       getPages: AppRoutes.routes,
-      initialRoute: AppRoutes.HOMESCREEN,
-      theme: AppTheme.theme,
+      initialRoute: AppRoutes.HOME,
+
+      theme: AppTheme.theme(),
+
     );
   }
 }

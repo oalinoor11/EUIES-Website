@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wonderkid.initial_app">
+    package="com.example.gweb">
    <application
-        android:label="initial_app"
+        android:label="gweb"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
