@@ -1,5 +1,5 @@
-import 'package:gweb/Core/Utilities/AppColors.dart';
-import 'package:gweb/Core/Utilities/AppConstrains.dart';
+import 'package:EUIES_Web/Core/Utilities/AppColors.dart';
+import 'package:EUIES_Web/Core/Utilities/AppConstrains.dart';
 import 'package:flutter/material.dart';
 
 class BikeCategoryItem extends StatelessWidget {

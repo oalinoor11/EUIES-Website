@@ -1,4 +1,4 @@
-name: gweb
+name: EUIES_Web
 
 description: A new Flutter application.
 publish_to: 'none'
@@ -20,6 +20,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  lints:
 
 flutter:
   uses-material-design: true

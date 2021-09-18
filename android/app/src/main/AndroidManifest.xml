@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.gweb">
+    package="com.example.EUIES_Web">
    <application
-        android:label="gweb"
+        android:label="EUIES_Web"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

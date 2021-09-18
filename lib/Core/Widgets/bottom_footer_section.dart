@@ -1,5 +1,5 @@
-import 'package:gweb/Core/Utilities/exportutilities.dart';
-import 'package:gweb/Core/Widgets/exportwidgets.dart';
+import 'package:EUIES_Web/Core/Utilities/exportutilities.dart';
+import 'package:EUIES_Web/Core/Widgets/exportwidgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -33,7 +33,7 @@ class _BottomFooterSectionState extends State<BottomFooterSection> {
 
 
   List<Widget> childrens = [
-    SizedBox(child: AppName(), height: 20, width: 120,),
+    SizedBox(child: AppName(), height: 50),
     Get.context!.width <= 720 ? AppConstrains.height5 : SizedBox.shrink(),
     Container(
       child: Text(

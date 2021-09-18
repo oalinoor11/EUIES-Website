@@ -1,5 +1,7 @@
-import 'package:gweb/Core/Utilities/exportutilities.dart';
-import 'package:gweb/Core/Widgets/exportwidgets.dart';
+import 'package:EUIES_Web/Core/Utilities/AppColors.dart';
+import 'package:EUIES_Web/Core/Utilities/AppConstrains.dart';
+import 'package:EUIES_Web/Core/Utilities/exportutilities.dart';
+import 'package:EUIES_Web/Core/Widgets/exportwidgets.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';

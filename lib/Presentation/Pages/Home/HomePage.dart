@@ -1,16 +1,14 @@
-import 'package:gweb/Core/Utilities/AppColors.dart';
-import 'package:gweb/Core/Utilities/AppConstrains.dart';
-import 'package:gweb/Core/Widgets/bottom_footer_section.dart';
-import 'package:gweb/Core/Widgets/exportwidgets.dart';
-import 'package:gweb/Core/Widgets/top_footer_section.dart';
-import 'package:gweb/Presentation/Pages/Home/Widgets/category_section.dart';
-import 'package:gweb/Presentation/Pages/Home/Widgets/jumbo_section.dart';
-import 'package:gweb/Presentation/Pages/Home/Widgets/news_and_reviews_section.dart';
+import 'package:EUIES_Web/Core/Utilities/AppColors.dart';
+import 'package:EUIES_Web/Core/Utilities/AppConstrains.dart';
+import 'package:EUIES_Web/Core/Widgets/bottom_footer_section.dart';
+import 'package:EUIES_Web/Core/Widgets/exportwidgets.dart';
+import 'package:EUIES_Web/Core/Widgets/top_footer_section.dart';
+import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/category_section.dart';
+import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/jumbo_section.dart';
+import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/news_and_reviews_section.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:getwidget/getwidget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -45,7 +43,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: AppColours.BACKGROUND,
       appBar: AppBar(
-        title: AppName(),
+        title: SizedBox(child: AppName(),height: context.width > 1080 ? 150 : 120,),
         toolbarHeight: context.width > 1080 ? 120 : null,
         actions: context.width > 1080 ? AppMenuItems() : null,
       ),
@@ -77,7 +75,6 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             JumboSection(),
-            AppConstrains.height80,
             CategorySection(),
             AppConstrains.height80,
             NewsAndReviewsSection(),

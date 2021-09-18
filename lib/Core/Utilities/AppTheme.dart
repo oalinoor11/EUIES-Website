@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'AppColors.dart';
 class AppTheme{
   static ThemeData theme() => ThemeData(
     primarySwatch: Colors.red,
     backgroundColor: AppColours.BACKGROUND,
-    textTheme: TextTheme(
-      button: TextStyle(
-        color: AppColours.WHITE,
-        fontWeight: FontWeight.bold
-      ),
-      bodyText1: TextStyle(
-          color: AppColours.WHITE,
-          fontWeight: FontWeight.bold
+    textTheme: GoogleFonts.montserratTextTheme(
+      TextTheme(
+        button: TextStyle(
+            color: AppColours.WHITE,
+            fontWeight: FontWeight.bold
+        ),
+        bodyText1: TextStyle(
+            color: AppColours.WHITE,
+            fontWeight: FontWeight.bold
+        ),
       ),
     ),
     appBarTheme: AppBarTheme(

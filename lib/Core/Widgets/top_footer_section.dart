@@ -1,4 +1,4 @@
-import 'package:gweb/Core/Utilities/exportutilities.dart';
+import 'package:EUIES_Web/Core/Utilities/exportutilities.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
@@ -13,40 +13,35 @@ class _TopFooterSectionState extends State<TopFooterSection> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: AppColours.WHITE,
+      width: double.infinity,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            color: AppColours.BLACK,
-            padding:
-            EdgeInsets.symmetric(horizontal: context.width * 0.2),
-            child: Row(
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Bikes for sale",
-                      style: Theme.of(context)
-                          .textTheme
-                          .headline3!
-                          .copyWith(color: AppColours.WHITE),
-                    ),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text("Used bikes for sale"),
-                    ),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text("New bikes for sale"),
-                    ),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text("BikeFacts History Report"),
-                    ),
-                  ],
-                ),
-              ],
+          Text(
+            "Contact Us",
+            style: Theme.of(context)
+                .textTheme
+                .headline3!
+                .copyWith(color: AppColours.WHITE),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextFormField(
+              decoration: InputDecoration(
+                hintText: "Name",
+                border: OutlineInputBorder(),
+                labelText: "Name"
+              ),
             ),
+          ),
+          TextButton(
+            onPressed: () {},
+            child: Text("New bikes for sale"),
+          ),
+          TextButton(
+            onPressed: () {},
+            child: Text("BikeFacts History Report"),
           ),
         ],
       ),

@@ -1,4 +1,4 @@
-package com.example.EUIES_Web
+package com.example.euieswebsite
 
 import io.flutter.embedding.android.FlutterActivity
 

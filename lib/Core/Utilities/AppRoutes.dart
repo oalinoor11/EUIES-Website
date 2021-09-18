@@ -1,4 +1,4 @@
-import 'package:gweb/Presentation/Pages/exportpages.dart';
+import 'package:EUIES_Web/Presentation/Pages/exportpages.dart';
 import 'package:get/get.dart';
 
 class AppRoutes{

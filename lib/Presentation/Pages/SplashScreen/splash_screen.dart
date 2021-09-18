@@ -17,11 +17,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   void initState() {
-    nextScreen();
-    super.initState();
-  }
-  @override
-  void initState() {
     SplashFunctions.init();
     super.initState();
   }

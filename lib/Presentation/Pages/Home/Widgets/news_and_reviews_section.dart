@@ -1,4 +1,4 @@
-import 'package:gweb/Core/Utilities/exportutilities.dart';
+import 'package:EUIES_Web/Core/Utilities/exportutilities.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';

@@ -4,10 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'Core/Language/Language.dart';
+import 'Core/Utilities/AppLocales.dart';
 import 'Core/Utilities/AppTheme.dart';
-import 'Core/Utilities/exportutilities.dart';
-import 'Presentation/Pages/exportpages.dart';
-import 'Presentation/Pages/homescreen.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
