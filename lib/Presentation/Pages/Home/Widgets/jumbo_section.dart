@@ -5,6 +5,7 @@ import 'package:getwidget/components/button/gf_button.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:glassmorphism/glassmorphism.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class JumboSection extends StatefulWidget {
   JumboSection({Key? key}) : super(key: key);
@@ -38,14 +39,14 @@ class _JumboSectionState extends State<JumboSection> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                Container(),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 50.0),
                   child: Text(
                     "Come and see your dreams coming true with us.",
-                    style: Theme.of(context)
-                        .textTheme
+                    style: GoogleFonts.robotoTextTheme()
                         .headline2!
-                        .copyWith(fontWeight: FontWeight.w600, color: Colors.black87),
+                        .copyWith(fontWeight: FontWeight.w600, color: Colors.black87, fontSize: 50),
                     textAlign: TextAlign.center,
                   ),
                 ),
