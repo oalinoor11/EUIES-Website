@@ -49,8 +49,8 @@ List<Widget> AppMenuItems() {
       padding: const EdgeInsets.symmetric(vertical: 40.0),
       child: GFButton(
         onPressed: () {},
-        color: AppColours.WHITE,
-        text: "Info Desk",
+        color: AppColours.RED,
+        text: "Apply for Scholarship",
         size: 30,
         padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5),
         shape: GFButtonShape.pills,

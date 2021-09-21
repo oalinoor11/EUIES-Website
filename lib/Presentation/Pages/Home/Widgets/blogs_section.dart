@@ -30,37 +30,15 @@ class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
           Padding(
             padding: EdgeInsets.symmetric(
                 vertical: 20.0, horizontal: context.width * 0.2),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Expanded(
-                  child: Text(
-                    "Blogs",
-                    style: Theme.of(context).textTheme.headline4,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                ),
-                GFButton(
-                  onPressed: () {},
-                  color: AppColours.RED,
-                  shape: GFButtonShape.pills,
-                  padding: EdgeInsets.symmetric(
-                    vertical: 10,
-                    horizontal: 20,
-                  ),
-                  elevation: 10,
-                  size: 50,
-                  child: Center(
-                    child: Text(
-                      "See more",
-                      style: Theme.of(context).textTheme.button,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                  ),
-                )
-              ],
+            child: Expanded(
+              child: Text(
+                "Our Dedicated Services",
+                style: Theme.of(context).textTheme.headline4,
+                overflow: TextOverflow.ellipsis,
+              ),
             ),
           ),
+          SizedBox(height: 20,),
           Container(
             padding: EdgeInsets.only(
               left: context.width * 0.1,
@@ -84,12 +62,21 @@ class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
                         Padding(
                           padding: const EdgeInsets.all(20.0),
                           child: Text(
+                            "Visa Processing",
+                            style: GoogleFonts.abel(fontSize: 18),
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 5,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: Text(
                             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet",
                             style: GoogleFonts.abel(fontSize: 18),
                             overflow: TextOverflow.ellipsis,
                             maxLines: 5,
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -109,13 +96,21 @@ class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
                         Padding(
                           padding: const EdgeInsets.all(20.0),
                           child: Text(
+                            "Visa Processing",
+                            style: GoogleFonts.abel(fontSize: 18),
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 5,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: Text(
                             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet",
                             style: GoogleFonts.abel(fontSize: 18),
                             overflow: TextOverflow.ellipsis,
                             maxLines: 5,
-
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -135,13 +130,21 @@ class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
                         Padding(
                           padding: const EdgeInsets.all(20.0),
                           child: Text(
+                            "Visa Processing",
+                            style: GoogleFonts.abel(fontSize: 18),
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 5,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: Text(
                             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet",
                             style: GoogleFonts.abel(fontSize: 18),
                             overflow: TextOverflow.ellipsis,
                             maxLines: 5,
-
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),

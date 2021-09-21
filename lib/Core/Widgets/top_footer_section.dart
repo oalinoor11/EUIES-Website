@@ -90,11 +90,11 @@ class _TopFooterSectionState extends State<TopFooterSection> {
                     padding: const EdgeInsets.all(8.0),
                     child: TextFormField(
                       decoration: InputDecoration(
-                        hintText: "Choice of University",
+                        hintText: "You are from",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: BorderSide(width: 10)),
-                        labelText: "Choice of University",
+                        labelText: "You are from",
                       ),
                     ),
                   ),

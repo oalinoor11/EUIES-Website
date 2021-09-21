@@ -52,17 +52,6 @@ class _HomePageState extends State<HomePage> {
         actions: context.width > 1080 ? AppMenuItems() : null,
         backgroundColor: appBarBackGroundColor,
       ),
-      floatingActionButton: showFloatingButton
-          ? FloatingActionButton(
-              onPressed: () {
-                scrollController.animateTo(0,
-                    duration: Duration(milliseconds: 300),
-                    curve: Curves.easeIn);
-              },
-              backgroundColor: AppColours.RED,
-              child: Icon(Icons.arrow_upward),
-            )
-          : null,
       drawer: context.width <= 1080
           ? Drawer(
               child: Container(

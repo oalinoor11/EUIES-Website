@@ -39,7 +39,7 @@ class _UniversitySectionState extends State<UniversitySection> {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
-                        "Top Universities",
+                        "Study Abroad",
                         style: context.width > 720
                             ? Theme.of(context).textTheme.headline4
                             : Theme.of(context).textTheme.headline6,
@@ -56,7 +56,7 @@ class _UniversitySectionState extends State<UniversitySection> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "Top Universities",
+                        "Study Abroad",
                         style: context.width > 720
                             ? Theme.of(context).textTheme.headline4
                             : Theme.of(context).textTheme.headline6,
@@ -76,27 +76,27 @@ class _UniversitySectionState extends State<UniversitySection> {
             itemHeight: 500,
             children: [
               UniversityItem(
-                universityName: "University 1",
+                universityName: "Germany",
                 imageLink:
                     "https://images.unsplash.com/20/cambridge.JPG?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
               ),
               UniversityItem(
-                universityName: "University 2",
+                universityName: "Canada",
                 imageLink:
                     "https://images.unsplash.com/20/cambridge.JPG?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
               ),
               UniversityItem(
-                universityName: "University 3",
+                universityName: "Norway",
                 imageLink:
                     "https://images.unsplash.com/20/cambridge.JPG?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
               ),
               UniversityItem(
-                universityName: "University 4",
+                universityName: "Australia",
                 imageLink:
                     "https://images.unsplash.com/20/cambridge.JPG?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
               ),
               UniversityItem(
-                universityName: "University 5",
+                universityName: "USA",
                 imageLink:
                     "https://images.unsplash.com/20/cambridge.JPG?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
               ),
