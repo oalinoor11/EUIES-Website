@@ -3,9 +3,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'Core/Language/Language.dart';
-import 'Core/Utilities/AppLocales.dart';
-import 'Core/Utilities/AppTheme.dart';
+import 'package:EUIES_Web/Core/Language/Language.dart';
+import 'package:EUIES_Web/Core/Utilities/AppLocales.dart';
+import 'package:EUIES_Web/Core/Utilities/AppTheme.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,7 +25,6 @@ class MyApp extends StatelessWidget {
       // home: HomePage(),
       getPages: AppRoutes.routes,
       initialRoute: AppRoutes.HOME,
-
       theme: AppTheme.theme(),
 
     );

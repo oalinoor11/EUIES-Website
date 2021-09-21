@@ -3,9 +3,9 @@ import 'package:EUIES_Web/Core/Utilities/AppConstrains.dart';
 import 'package:EUIES_Web/Core/Widgets/bottom_footer_section.dart';
 import 'package:EUIES_Web/Core/Widgets/exportwidgets.dart';
 import 'package:EUIES_Web/Core/Widgets/top_footer_section.dart';
-import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/category_section.dart';
+import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/university_section.dart';
 import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/jumbo_section.dart';
-import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/news_and_reviews_section.dart';
+import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/blogs_section.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -22,16 +22,20 @@ class _HomePageState extends State<HomePage> {
 
   bool showFloatingButton = false;
 
+  Color appBarBackGroundColor = Colors.black54;
+
   @override
   void initState() {
     scrollController.addListener(() {
       if (scrollController.offset > 120) {
         setState(() {
           showFloatingButton = true;
+          appBarBackGroundColor = Colors.black87;
         });
       } else {
         setState(() {
           showFloatingButton = false;
+          appBarBackGroundColor = Colors.black54;
         });
       }
     });
@@ -46,6 +50,7 @@ class _HomePageState extends State<HomePage> {
         title: SizedBox(child: AppName(),height: context.width > 1080 ? 150 : 120,),
         toolbarHeight: context.width > 1080 ? 120 : null,
         actions: context.width > 1080 ? AppMenuItems() : null,
+        backgroundColor: appBarBackGroundColor,
       ),
       floatingActionButton: showFloatingButton
           ? FloatingActionButton(
@@ -75,7 +80,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             JumboSection(),
-            CategorySection(),
+            UniversitySection(),
             AppConstrains.height80,
             NewsAndReviewsSection(),
             AppConstrains.height80,

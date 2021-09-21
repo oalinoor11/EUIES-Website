@@ -6,7 +6,7 @@ class AppTheme{
   static ThemeData theme() => ThemeData(
     primarySwatch: Colors.red,
     backgroundColor: AppColours.BACKGROUND,
-    textTheme: GoogleFonts.montserratTextTheme(
+    textTheme: GoogleFonts.abelTextTheme(
       TextTheme(
         button: TextStyle(
             color: AppColours.WHITE,
