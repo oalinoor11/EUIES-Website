@@ -4,18 +4,19 @@ import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class NewsAndReviewsSection extends StatefulWidget {
-  NewsAndReviewsSection({Key? key}) : super(key: key);
+class ServicesSection extends StatefulWidget {
+  ServicesSection({Key? key}) : super(key: key);
 
   @override
-  _NewsAndReviewsSectionState createState() => _NewsAndReviewsSectionState();
+  _ServicesSectionState createState() => _ServicesSectionState();
 }
 
-class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
+class _ServicesSectionState extends State<ServicesSection> {
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
+      height: context.height,
       decoration: BoxDecoration(
         color: AppColours.WHITE,
         boxShadow: [
@@ -26,6 +27,7 @@ class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
         ],
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Padding(
             padding: EdgeInsets.symmetric(

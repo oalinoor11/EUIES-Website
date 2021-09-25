@@ -3,9 +3,10 @@ import 'package:EUIES_Web/Core/Utilities/AppConstrains.dart';
 import 'package:EUIES_Web/Core/Widgets/bottom_footer_section.dart';
 import 'package:EUIES_Web/Core/Widgets/exportwidgets.dart';
 import 'package:EUIES_Web/Core/Widgets/top_footer_section.dart';
-import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/university_section.dart';
-import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/jumbo_section.dart';
+import 'package:EUIES_Web/Presentation/Controllers/HomeController.dart';
 import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/blogs_section.dart';
+import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/jumbo_section.dart';
+import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/university_section.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,16 +19,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  ScrollController scrollController = ScrollController();
-
   bool showFloatingButton = false;
-
   Color appBarBackGroundColor = Colors.black54;
+  HomeController homeController = Get.put(HomeController());
 
   @override
   void initState() {
-    scrollController.addListener(() {
-      if (scrollController.offset > 120) {
+    HomeController.to.scrollController.value.addListener(() {
+      if (HomeController.to.scrollController.value.offset > 120) {
         setState(() {
           showFloatingButton = true;
           appBarBackGroundColor = Colors.black87;
@@ -47,7 +46,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: AppColours.BACKGROUND,
       appBar: AppBar(
-        title: SizedBox(child: AppName(),height: context.width > 1080 ? 150 : 120,),
+        title: SizedBox(
+          child: AppName(),
+          height: context.width > 1080 ? 150 : 120,
+        ),
         toolbarHeight: context.width > 1080 ? 120 : null,
         actions: context.width > 1080 ? AppMenuItems() : null,
         backgroundColor: appBarBackGroundColor,
@@ -65,13 +67,13 @@ class _HomePageState extends State<HomePage> {
           : null,
       extendBodyBehindAppBar: true,
       body: SingleChildScrollView(
-        controller: scrollController,
+        controller: HomeController.to.scrollController.value,
         child: Column(
           children: [
             JumboSection(),
             UniversitySection(),
             AppConstrains.height80,
-            NewsAndReviewsSection(),
+            ServicesSection(),
             AppConstrains.height80,
             TopFooterSection(),
             BottomFooterSection(),

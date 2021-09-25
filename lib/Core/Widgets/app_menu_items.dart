@@ -2,6 +2,7 @@ import 'package:EUIES_Web/Core/Utilities/AppColors.dart';
 import 'package:EUIES_Web/Core/Utilities/AppConstrains.dart';
 import 'package:EUIES_Web/Core/Utilities/exportutilities.dart';
 import 'package:EUIES_Web/Core/Widgets/exportwidgets.dart';
+import 'package:EUIES_Web/Presentation/Controllers/HomeController.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
@@ -11,7 +12,9 @@ List<Widget> AppMenuItems() {
     Padding(
       padding: const EdgeInsets.all(10.0),
       child: TextButton(
-          onPressed: () {},
+          onPressed: () {
+            HomeController.to.scrollController().animateTo(Get.context!.height, duration: Duration(milliseconds: 200), curve: Curves.easeIn);
+            },
           child: Text(
             "Study Abroad",
             style: Get.textTheme.button,
@@ -20,7 +23,9 @@ List<Widget> AppMenuItems() {
     Padding(
       padding: const EdgeInsets.all(10.0),
       child: TextButton(
-          onPressed: () {},
+          onPressed: () {
+            HomeController.to.scrollController().animateTo(Get.context!.height*2, duration: Duration(milliseconds: 200), curve: Curves.easeIn);
+          },
           child: Text(
             "Services",
             style: Get.textTheme.button,
@@ -29,7 +34,9 @@ List<Widget> AppMenuItems() {
     Padding(
       padding: const EdgeInsets.all(10.0),
       child: TextButton(
-          onPressed: () {},
+          onPressed: () {
+            HomeController.to.scrollController().animateTo(Get.context!.height*3, duration: Duration(milliseconds: 200), curve: Curves.easeIn);
+            },
           child: Text(
             "Contact",
             style: Get.textTheme.button,

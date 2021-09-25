@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: "EUIES International Education Service",
-
       translations: Language(),
       locale: AppLocales.ENGLISH,
       fallbackLocale: AppLocales.ENGLISH,
@@ -26,7 +25,6 @@ class MyApp extends StatelessWidget {
       getPages: AppRoutes.routes,
       initialRoute: AppRoutes.HOME,
       theme: AppTheme.theme(),
-
     );
   }
 }

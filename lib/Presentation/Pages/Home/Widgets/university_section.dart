@@ -16,6 +16,7 @@ class _UniversitySectionState extends State<UniversitySection> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
+      height: context.height,
       decoration: BoxDecoration(
         color: AppColours.WHITE,
         boxShadow: [
@@ -28,6 +29,7 @@ class _UniversitySectionState extends State<UniversitySection> {
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           AppConstrains.height20,
           context.width > 720
