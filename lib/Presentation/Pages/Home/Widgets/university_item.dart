@@ -16,14 +16,17 @@ class _UniversityItemState extends State<UniversityItem> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ClipRRect(
-          borderRadius: BorderRadius.circular(15),
-          child: Image.network(
-            "${widget.imageLink}",
-            height: 300,
-            loadingBuilder: (context, _, __){
-              return __ == null ? _ : Center(child: CircularProgressIndicator());
-            },
+        Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(15),
+            child: Image.network(
+              "${widget.imageLink}",
+              height: 300,
+              loadingBuilder: (context, _, __){
+                return __ == null ? _ : Center(child: CircularProgressIndicator());
+              },
+            ),
           ),
         ),
         AppConstrains.height25,

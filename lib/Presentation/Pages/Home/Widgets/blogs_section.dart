@@ -30,7 +30,8 @@ class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
           Padding(
             padding: EdgeInsets.symmetric(
                 vertical: 20.0, horizontal: context.width * 0.2),
-            child: Expanded(
+            child: SizedBox(
+              width: 350,
               child: Text(
                 "Our Dedicated Services",
                 style: Theme.of(context).textTheme.headline4,
@@ -47,8 +48,10 @@ class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
             ),
             height: 600,
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Expanded(
+                SizedBox(
+                  width: 350,
                   child: Card(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
@@ -62,7 +65,7 @@ class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
                         Padding(
                           padding: const EdgeInsets.all(20.0),
                           child: Text(
-                            "Visa Processing",
+                            "Career Counseling",
                             style: GoogleFonts.abel(fontSize: 18),
                             overflow: TextOverflow.ellipsis,
                             maxLines: 5,
@@ -71,10 +74,11 @@ class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
                         Padding(
                           padding: const EdgeInsets.all(20.0),
                           child: Text(
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet",
+                            "Be it Science, Management or Humanities, we have helped students in all fields for decades so we exactly know how you can plan your future which is appropriate for your background. We are proud to have helped students achieve success in different fields.",
                             style: GoogleFonts.abel(fontSize: 18),
                             overflow: TextOverflow.ellipsis,
                             maxLines: 5,
+                            textAlign: TextAlign.justify,
                           ),
                         ),
                       ],
@@ -82,7 +86,8 @@ class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
                   ),
                 ),
                 AppConstrains.width20,
-                Expanded(
+                SizedBox(
+                  width: 350,
                   child: Card(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
@@ -96,7 +101,7 @@ class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
                         Padding(
                           padding: const EdgeInsets.all(20.0),
                           child: Text(
-                            "Visa Processing",
+                            "Interview Assistance",
                             style: GoogleFonts.abel(fontSize: 18),
                             overflow: TextOverflow.ellipsis,
                             maxLines: 5,
@@ -105,10 +110,11 @@ class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
                         Padding(
                           padding: const EdgeInsets.all(20.0),
                           child: Text(
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet",
+                            "VISA interview is one of the biggest steps and a simple mistake in this step may prevent students from achieving their dreams. We provide expert assistance during this phase and help students by applying for interviews, scheduling interview dates, fees payment, and also help students prepare for interview questions.",
                             style: GoogleFonts.abel(fontSize: 18),
                             overflow: TextOverflow.ellipsis,
                             maxLines: 5,
+                            textAlign: TextAlign.justify,
                           ),
                         ),
                       ],
@@ -116,7 +122,8 @@ class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
                   ),
                 ),
                 AppConstrains.width20,
-                Expanded(
+                SizedBox(
+                  width: 350,
                   child: Card(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
@@ -130,7 +137,7 @@ class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
                         Padding(
                           padding: const EdgeInsets.all(20.0),
                           child: Text(
-                            "Visa Processing",
+                            "Documentation",
                             style: GoogleFonts.abel(fontSize: 18),
                             overflow: TextOverflow.ellipsis,
                             maxLines: 5,
@@ -139,10 +146,11 @@ class _NewsAndReviewsSectionState extends State<NewsAndReviewsSection> {
                         Padding(
                           padding: const EdgeInsets.all(20.0),
                           child: Text(
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheet",
+                            "Documentation is one of the most important aspects of applying for foreign education. We can help students create documentation that makes sure universities accept the applications and also make sure VISA interviews are not rejected. We make sure that students do not miss any important documents during application process.",
                             style: GoogleFonts.abel(fontSize: 18),
                             overflow: TextOverflow.ellipsis,
                             maxLines: 5,
+                            textAlign: TextAlign.justify,
                           ),
                         ),
                       ],
