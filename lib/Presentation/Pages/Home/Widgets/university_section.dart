@@ -80,27 +80,27 @@ class _UniversitySectionState extends State<UniversitySection> {
               UniversityItem(
                 universityName: "Germany",
                 imageLink:
-                    "images/german11.jpg",
+                    "images/german11.png",
               ),
               UniversityItem(
                 universityName: "France",
                 imageLink:
-                    "images/france11.jpg",
+                    "images/france11.png",
               ),
               UniversityItem(
                 universityName: "Netherlands",
                 imageLink:
-                    "images/netherlands11.jpg",
+                    "images/netherlands11.png",
               ),
               UniversityItem(
                 universityName: "Spain",
                 imageLink:
-                    "images/spain11.jpg",
+                    "images/spain11.png",
               ),
               UniversityItem(
                 universityName: "Sweden",
                 imageLink:
-                    "images/sweden11.jpg",
+                    "images/sweden11.png",
               ),
             ],
           ),

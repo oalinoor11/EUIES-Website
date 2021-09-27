@@ -61,7 +61,7 @@ class _ServicesSectionState extends State<ServicesSection> {
                     child: Column(
                       children: <Widget>[
                         Image.asset(
-                          "images/Career-Counseling.jpg",
+                          "images/Career-Counseling.png",
                           fit: BoxFit.contain,
                         ),
                         Padding(
@@ -97,7 +97,7 @@ class _ServicesSectionState extends State<ServicesSection> {
                     child: Column(
                       children: <Widget>[
                         Image.asset(
-                          "images/interview.jpg",
+                          "images/interview.png",
                           fit: BoxFit.contain,
                         ),
                         Padding(
@@ -133,7 +133,7 @@ class _ServicesSectionState extends State<ServicesSection> {
                     child: Column(
                       children: <Widget>[
                         Image.asset(
-                          "images/doccumantation.jpg",
+                          "images/doccumantation.png",
                           fit: BoxFit.contain,
                         ),
                         Padding(
