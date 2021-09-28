@@ -51,17 +51,6 @@ class _JumboSectionState extends State<JumboSection> {
                   ),
                 ),
                 AppConstrains.height40,
-                GFButton(
-                  onPressed: () {},
-                  text: "Apply now",
-                  type: GFButtonType.solid,
-                  color: Theme.of(context).primaryColor,
-                  shape: GFButtonShape.pills,
-                  size: 80,
-                  padding: EdgeInsets.all(20),
-                  textStyle: Theme.of(context).textTheme.headline4!
-                      .copyWith(fontWeight: FontWeight.w600, color: Theme.of(context).backgroundColor),
-                ),
               ],
             ),
           ),

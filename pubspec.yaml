@@ -30,6 +30,7 @@ flutter:
     - assets/images/background/
     - assets/images/Logo/
     - assets/images/bikes/
+    - assets/images/
 
 
   # fonts:

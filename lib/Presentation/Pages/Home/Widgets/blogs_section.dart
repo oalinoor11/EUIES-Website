@@ -60,8 +60,8 @@ class _ServicesSectionState extends State<ServicesSection> {
                     elevation: 10,
                     child: Column(
                       children: <Widget>[
-                        Image.network(
-                          "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxvZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+                        Image.asset(
+                          "images/Career-Counseling.png",
                           fit: BoxFit.contain,
                         ),
                         Padding(
@@ -96,8 +96,8 @@ class _ServicesSectionState extends State<ServicesSection> {
                     elevation: 10,
                     child: Column(
                       children: <Widget>[
-                        Image.network(
-                          "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxvZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+                        Image.asset(
+                          "images/interview.png",
                           fit: BoxFit.contain,
                         ),
                         Padding(
@@ -132,8 +132,8 @@ class _ServicesSectionState extends State<ServicesSection> {
                     elevation: 10,
                     child: Column(
                       children: <Widget>[
-                        Image.network(
-                          "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxvZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+                        Image.asset(
+                          "images/doccumantation.png",
                           fit: BoxFit.contain,
                         ),
                         Padding(

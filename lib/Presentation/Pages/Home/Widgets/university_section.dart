@@ -80,27 +80,27 @@ class _UniversitySectionState extends State<UniversitySection> {
               UniversityItem(
                 universityName: "Germany",
                 imageLink:
-                    "https://images.unsplash.com/20/cambridge.JPG?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+                    "images/german11.png",
               ),
               UniversityItem(
                 universityName: "France",
                 imageLink:
-                    "https://images.unsplash.com/20/cambridge.JPG?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+                    "images/france11.png",
               ),
               UniversityItem(
                 universityName: "Netherlands",
                 imageLink:
-                    "https://images.unsplash.com/20/cambridge.JPG?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+                    "images/netherlands11.png",
               ),
               UniversityItem(
                 universityName: "Spain",
                 imageLink:
-                    "https://images.unsplash.com/20/cambridge.JPG?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+                    "images/spain11.png",
               ),
               UniversityItem(
                 universityName: "Sweden",
                 imageLink:
-                    "https://images.unsplash.com/20/cambridge.JPG?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+                    "images/sweden11.png",
               ),
             ],
           ),
