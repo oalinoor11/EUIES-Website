@@ -45,7 +45,9 @@ List<Widget> AppMenuItems() {
     Padding(
       padding: const EdgeInsets.all(10.0),
       child: TextButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.toNamed(AppRoutes.ABOUTSCREEN);
+          },
           child: Text(
             "About Us",
             style: Get.textTheme.button,
