@@ -7,14 +7,14 @@ import 'package:glassmorphism/glassmorphism.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class JumboSection extends StatefulWidget {
-  JumboSection({Key? key}) : super(key: key);
+class AboutJumbo extends StatefulWidget {
+  AboutJumbo({Key? key}) : super(key: key);
 
   @override
-  _JumboSectionState createState() => _JumboSectionState();
+  _AboutJumboState createState() => _AboutJumboState();
 }
 
-class _JumboSectionState extends State<JumboSection> {
+class _AboutJumboState extends State<AboutJumbo> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -22,7 +22,7 @@ class _JumboSectionState extends State<JumboSection> {
       height: context.height,
       decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/images/background/studyineurope.png"),
+              image: AssetImage("assets/images/background/about-jumbo.jpg"),
               fit: BoxFit.cover,
               alignment: Alignment.centerLeft)),
       child: Column(
@@ -30,7 +30,7 @@ class _JumboSectionState extends State<JumboSection> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            height: context.height * 0.5,
+            height: context.height * 0.2,
             decoration: BoxDecoration(
               color: Theme.of(context).backgroundColor.withOpacity(0.75),
               borderRadius: BorderRadius.circular(15),
@@ -43,14 +43,13 @@ class _JumboSectionState extends State<JumboSection> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 50.0),
                   child: Text(
-                    "Come and see your dreams coming true with us.",
+                    "About Us",
                     style: GoogleFonts.robotoTextTheme()
                         .headline2!
                         .copyWith(fontWeight: FontWeight.w600, color: Colors.black87, fontSize: 50),
                     textAlign: TextAlign.center,
                   ),
                 ),
-                AppConstrains.height40,
               ],
             ),
           ),

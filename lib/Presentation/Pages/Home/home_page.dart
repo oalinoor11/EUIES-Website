@@ -11,14 +11,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class AboutScreen extends StatefulWidget {
-  const AboutScreen({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
-  _AboutScreenState createState() => _AboutScreenState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _AboutScreenState extends State<AboutScreen> {
+class _HomePageState extends State<HomePage> {
   bool showFloatingButton = false;
   Color appBarBackGroundColor = Colors.black54;
   HomeController homeController = Get.put(HomeController());
@@ -47,7 +47,14 @@ class _AboutScreenState extends State<AboutScreen> {
       backgroundColor: AppColours.BACKGROUND,
       appBar: AppBar(
         title: SizedBox(
-          child: AppName(),
+          child: InkWell(
+            child: AppName(),
+            onTap: () {
+              HomeController.to.scrollController.value.animateTo(0,
+                  duration: const Duration(milliseconds: 300),
+                  curve: Curves.easeIn);
+            },
+          ),
           height: context.width > 1080 ? 150 : 120,
         ),
         toolbarHeight: context.width > 1080 ? 120 : null,
@@ -56,14 +63,14 @@ class _AboutScreenState extends State<AboutScreen> {
       ),
       drawer: context.width <= 1080
           ? Drawer(
-        child: Container(
-          color: Colors.black54,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: AppDrawerItems(),
-          ),
-        ),
-      )
+              child: Container(
+                color: Colors.black54,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: AppDrawerItems(),
+                ),
+              ),
+            )
           : null,
       extendBodyBehindAppBar: true,
       body: SingleChildScrollView(
@@ -71,6 +78,12 @@ class _AboutScreenState extends State<AboutScreen> {
         child: Column(
           children: [
             JumboSection(),
+            UniversitySection(),
+            AppConstrains.height80,
+            ServicesSection(),
+            AppConstrains.height80,
+            TopFooterSection(),
+            BottomFooterSection(),
           ],
         ),
       ),

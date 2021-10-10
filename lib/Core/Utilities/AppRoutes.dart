@@ -1,4 +1,4 @@
-import 'package:EUIES_Web/Presentation/Pages/aboutscreen.dart';
+import 'package:EUIES_Web/Presentation/Pages/AboutUs/about_us_page.dart';
 import 'package:EUIES_Web/Presentation/Pages/exportpages.dart';
 import 'package:get/get.dart';
 
@@ -10,6 +10,6 @@ class AppRoutes{
   static List<GetPage> routes = [
     GetPage(name: INITIAL, page:() => SplashScreen(),),
     GetPage(name: HOME, page:() => HomePage(),),
-    GetPage(name: ABOUTSCREEN, page:() => AboutScreen(),),
+    GetPage(name: ABOUTSCREEN, page:() => AboutUsPage(),),
   ];
 }
