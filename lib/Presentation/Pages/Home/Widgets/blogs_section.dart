@@ -44,8 +44,8 @@ class _ServicesSectionState extends State<ServicesSection> {
           SizedBox(height: 20,),
           Container(
             padding: EdgeInsets.only(
-              left: context.width * 0.1,
-              right: context.width * 0.1,
+              left: context.width * 0,
+              right: context.width * 0,
               bottom: 80,
             ),
             height: 600,
@@ -61,7 +61,7 @@ class _ServicesSectionState extends State<ServicesSection> {
                     child: Column(
                       children: <Widget>[
                         Image.asset(
-                          "images/Career-Counseling.png",
+                          "assets/images/Career-Counseling.png",
                           fit: BoxFit.contain,
                         ),
                         Padding(
@@ -97,7 +97,7 @@ class _ServicesSectionState extends State<ServicesSection> {
                     child: Column(
                       children: <Widget>[
                         Image.asset(
-                          "images/interview.png",
+                          "assets/images/interview.png",
                           fit: BoxFit.contain,
                         ),
                         Padding(
@@ -133,7 +133,7 @@ class _ServicesSectionState extends State<ServicesSection> {
                     child: Column(
                       children: <Widget>[
                         Image.asset(
-                          "images/doccumantation.png",
+                          "assets/images/doccumantation.png",
                           fit: BoxFit.contain,
                         ),
                         Padding(

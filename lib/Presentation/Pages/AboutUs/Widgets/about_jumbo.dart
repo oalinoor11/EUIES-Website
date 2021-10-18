@@ -30,7 +30,7 @@ class _AboutJumboState extends State<AboutJumbo> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            height: context.height * 0.2,
+            height: context.height * 0.5,
             decoration: BoxDecoration(
               color: Theme.of(context).backgroundColor.withOpacity(0.75),
               borderRadius: BorderRadius.circular(15),
@@ -42,12 +42,24 @@ class _AboutJumboState extends State<AboutJumbo> {
                 Container(),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 50.0),
-                  child: Text(
-                    "About Us",
-                    style: GoogleFonts.robotoTextTheme()
-                        .headline2!
-                        .copyWith(fontWeight: FontWeight.w600, color: Colors.black87, fontSize: 50),
-                    textAlign: TextAlign.center,
+                  child: Column(
+                    children: [
+                      Text(
+                        "Who we are?",
+                        style: GoogleFonts.robotoTextTheme()
+                            .headline2!
+                            .copyWith(fontWeight: FontWeight.w600, color: Colors.black87, fontSize: 50),
+                        textAlign: TextAlign.center,
+                      ),
+                      SizedBox(height: 20,),
+                      Text(
+                        "Hey, we are a dedicated team to assist to fulfill your dream study in Germany. Your dream to visa processing, in every step you will get help from us. Feel free to contact with us.",
+                        style: GoogleFonts.robotoTextTheme()
+                            .bodyText2!
+                            .copyWith(fontWeight: FontWeight.w300, color: Colors.black45, fontSize: 40),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
                   ),
                 ),
               ],

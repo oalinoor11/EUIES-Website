@@ -21,7 +21,7 @@ class _UniversityItemState extends State<UniversityItem> {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(15),
             child: Image.asset(
-              "${widget.imageLink}",
+              "assets/${widget.imageLink}",
               height: 300,
             ),
           ),

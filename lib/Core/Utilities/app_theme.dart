@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'AppColors.dart';
 class AppTheme{
   static ThemeData theme() => ThemeData(
+    splashColor: Colors.transparent,
+    highlightColor: Colors.transparent,
     primarySwatch: Colors.red,
     backgroundColor: AppColours.BACKGROUND,
     splashFactory: NoSplash.splashFactory,

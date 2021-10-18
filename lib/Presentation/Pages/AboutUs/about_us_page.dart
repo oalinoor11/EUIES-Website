@@ -38,7 +38,7 @@ class _AboutUsPageState extends State<AboutUsPage> {
           height: context.width > 1080 ? 150 : 120,
         ),
         toolbarHeight: context.width > 1080 ? 120 : null,
-        // actions: context.width > 1080 ? AppMenuItems() : null,
+        actions: context.width > 1080 ? AppMenuItems() : null,
         backgroundColor: appBarBackGroundColor,
       ),
       drawer: context.width <= 1080
