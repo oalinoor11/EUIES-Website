@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 
 import 'package:EUIES_Web/Core/Language/Language.dart';
 import 'package:EUIES_Web/Core/Utilities/AppLocales.dart';
-import 'package:EUIES_Web/Core/Utilities/AppTheme.dart';
+import 'package:EUIES_Web/Core/Utilities/app_theme.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();

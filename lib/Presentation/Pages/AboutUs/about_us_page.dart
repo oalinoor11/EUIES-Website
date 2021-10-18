@@ -27,9 +27,14 @@ class _AboutUsPageState extends State<AboutUsPage> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: SizedBox(
-          child: InkWell(child: AppName(), onTap: (){
-            Get.offAllNamed(AppRoutes.HOME);
-          },),
+          child: InkWell(
+            splashFactory: NoSplash.splashFactory,
+            overlayColor: MaterialStateProperty.all(Colors.transparent),
+            child: AppName(),
+            onTap: () {
+              Get.offAllNamed(AppRoutes.HOME);
+            },
+          ),
           height: context.width > 1080 ? 150 : 120,
         ),
         toolbarHeight: context.width > 1080 ? 120 : null,

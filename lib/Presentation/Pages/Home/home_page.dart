@@ -48,6 +48,8 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: SizedBox(
           child: InkWell(
+            overlayColor: MaterialStateProperty.all(Colors.transparent),
+            splashFactory: NoSplash.splashFactory,
             child: AppName(),
             onTap: () {
               HomeController.to.scrollController.value.animateTo(0,

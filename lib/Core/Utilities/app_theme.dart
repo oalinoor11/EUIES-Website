@@ -6,8 +6,9 @@ class AppTheme{
   static ThemeData theme() => ThemeData(
     primarySwatch: Colors.red,
     backgroundColor: AppColours.BACKGROUND,
+    splashFactory: NoSplash.splashFactory,
     textTheme: GoogleFonts.abelTextTheme(
-      TextTheme(
+      const TextTheme(
         button: TextStyle(
             color: AppColours.WHITE,
             fontWeight: FontWeight.bold
@@ -18,7 +19,12 @@ class AppTheme{
         ),
       ),
     ),
-    appBarTheme: AppBarTheme(
+    textButtonTheme: TextButtonThemeData(
+      style: ButtonStyle(
+        overlayColor: MaterialStateProperty.all(Colors.transparent),
+      ),
+    ),
+    appBarTheme: const AppBarTheme(
       backgroundColor: Colors.black54,
       elevation: 0,
       titleTextStyle: TextStyle(
