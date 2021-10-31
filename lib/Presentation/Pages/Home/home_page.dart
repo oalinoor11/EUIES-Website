@@ -5,6 +5,7 @@ import 'package:EUIES_Web/Core/Widgets/exportwidgets.dart';
 import 'package:EUIES_Web/Core/Widgets/top_footer_section.dart';
 import 'package:EUIES_Web/Presentation/Controllers/HomeController.dart';
 import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/blogs_section.dart';
+import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/contact_sector.dart';
 import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/jumbo_section.dart';
 import 'package:EUIES_Web/Presentation/Pages/Home/Widgets/university_section.dart';
 import 'package:flutter/cupertino.dart';
@@ -84,7 +85,8 @@ class _HomePageState extends State<HomePage> {
             AppConstrains.height80,
             ServicesSection(),
             AppConstrains.height80,
-            TopFooterSection(),
+            // TopFooterSection(),
+            ContactSector(),
             BottomFooterSection(),
           ],
         ),

@@ -1,11 +1,13 @@
 import 'package:EUIES_Web/Core/Utilities/AppColors.dart';
 import 'package:EUIES_Web/Core/Utilities/AppConstrains.dart';
+import 'package:EUIES_Web/Core/Utilities/AppRoutes.dart';
 import 'package:EUIES_Web/Core/Utilities/exportutilities.dart';
 import 'package:EUIES_Web/Core/Widgets/exportwidgets.dart';
 import 'package:EUIES_Web/Presentation/Controllers/HomeController.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 List<Widget> AppMenuItems() {
   return [
@@ -13,7 +15,7 @@ List<Widget> AppMenuItems() {
       padding: const EdgeInsets.all(10.0),
       child: TextButton(
           onPressed: () {
-            HomeController.to.scrollController().animateTo(Get.context!.height, duration: Duration(milliseconds: 200), curve: Curves.easeIn);
+            HomeController.to.scrollController().animateTo(Get.context!.height, duration: const Duration(milliseconds: 200), curve: Curves.easeIn);
             },
           child: Text(
             "Study Abroad",
@@ -24,7 +26,7 @@ List<Widget> AppMenuItems() {
       padding: const EdgeInsets.all(10.0),
       child: TextButton(
           onPressed: () {
-            HomeController.to.scrollController().animateTo(Get.context!.height*2, duration: Duration(milliseconds: 200), curve: Curves.easeIn);
+            HomeController.to.scrollController().animateTo(Get.context!.height*2, duration: const Duration(milliseconds: 200), curve: Curves.easeIn);
           },
           child: Text(
             "Services",
@@ -35,7 +37,7 @@ List<Widget> AppMenuItems() {
       padding: const EdgeInsets.all(10.0),
       child: TextButton(
           onPressed: () {
-            HomeController.to.scrollController().animateTo(Get.context!.height*3, duration: Duration(milliseconds: 200), curve: Curves.easeIn);
+            HomeController.to.scrollController().animateTo(Get.context!.height*3, duration: const Duration(milliseconds: 200), curve: Curves.easeIn);
             },
           child: Text(
             "Contact",
@@ -45,8 +47,8 @@ List<Widget> AppMenuItems() {
     Padding(
       padding: const EdgeInsets.all(10.0),
       child: TextButton(
-          onPressed: () {
-            Get.toNamed(AppRoutes.ABOUTSCREEN);
+          onPressed: () async{
+            var dist = await Get.toNamed(AppRoutes.ABOUTSCREEN);
           },
           child: Text(
             "About Us",
@@ -57,11 +59,14 @@ List<Widget> AppMenuItems() {
     Padding(
       padding: const EdgeInsets.symmetric(vertical: 40.0),
       child: GFButton(
-        onPressed: () {},
+        onPressed: () {
+          // Get.toNamed(AppRoutes.APPLYSCREEN);
+          launch("https://docs.google.com/forms/d/19nuD1ExVPrX2iBTT0-xt1kXsFtTvbuM0JKRHxi0l5t4/edit?usp=sharing");
+        },
         color: AppColours.RED,
         text: "Apply for Scholarship",
         size: 30,
-        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5),
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
         shape: GFButtonShape.pills,
       ),
     ),
@@ -111,11 +116,14 @@ List<Widget> AppDrawerItems() {
           )),
     ),
     GFButton(
-      onPressed: () {},
+      onPressed: () {
+        // Get.toNamed(AppRoutes.APPLYSCREEN);
+        launch("https://docs.google.com/forms/d/19nuD1ExVPrX2iBTT0-xt1kXsFtTvbuM0JKRHxi0l5t4/edit?usp=sharing");
+      },
       color: AppColours.RED,
       text: "Apply for Scholarship",
       size: 30,
-      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5),
+      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
       shape: GFButtonShape.pills,
     ),
   ];

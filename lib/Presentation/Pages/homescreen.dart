@@ -13,7 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SingleChildScrollView(
         child: Column(
             children: [Container(),
-            SizedBox(height: 100,),
+            const SizedBox(height: 100,),
             const Image(
             image: AssetImage("assets/images/studyineurope.png"),
             width: double.infinity,
@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: Column(crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text('SERVICES', style: TextStyle(color: Colors.red, fontSize: 16),),
                       SizedBox(height: 15,),
                       Text('Our Dedicated Services', style: TextStyle(color: Colors.black, fontSize: 28, fontWeight: FontWeight.bold),),
