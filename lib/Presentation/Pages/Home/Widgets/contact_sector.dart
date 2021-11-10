@@ -61,26 +61,54 @@ class _ContactSectorState extends State<ContactSector> {
                     child: Column(
                       children: <Widget>[
                         Image.asset(
-                          "assets/images/Career-Counseling.png",
+                          "assets/images/german.jpg",
                           fit: BoxFit.contain,
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20.0),
-                          child: Text(
-                            "Germany Office",
-                            style: GoogleFonts.abel(fontSize: 18),
-                            overflow: TextOverflow.ellipsis,
-                            maxLines: 5,
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Text(
-                            "Be it Science, Management or Humanities, we have helped students in all fields for decades so we exactly know how you can plan your future which is appropriate for your background. We are proud to have helped students achieve success in different fields.",
-                            style: GoogleFonts.abel(fontSize: 18),
-                            overflow: TextOverflow.ellipsis,
-                            maxLines: 5,
-                            textAlign: TextAlign.justify,
+                          child: Column(crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Row(mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.school, color: Colors.red,),
+                                  SizedBox(width: 10,),
+                                  Text(
+                                      "Germany Office",
+                                      softWrap: true,
+                                      style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                                  ),
+                                ],
+                              ),
+
+                              SizedBox(height: 10,),
+                              Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.domain, color: Colors.blue,),
+                                  SizedBox(width: 10,),
+                                  Expanded(
+                                    child: Text(
+                                        "Plot: X, Block: X, Berlin, Germany 1229",
+                                        softWrap: true,
+                                        maxLines: 3,
+                                        style: TextStyle(fontSize: 18.0,)
+                                    ),
+                                  ),
+                                ],
+                              ),
+
+                              SizedBox(height: 10,),
+                              Row(mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.support_agent, color: Colors.green),
+                                  SizedBox(width: 10,),
+                                  Text(
+                                      "+49 17336545464",
+                                      softWrap: true,
+                                      style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500)
+                                  ),
+                                ],
+                              ),
+                            ],
                           ),
                         ),
                       ],
@@ -97,26 +125,54 @@ class _ContactSectorState extends State<ContactSector> {
                     child: Column(
                       children: <Widget>[
                         Image.asset(
-                          "assets/images/interview.png",
+                          "assets/images/dhakaoffice.jpg",
                           fit: BoxFit.contain,
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20.0),
-                          child: Text(
-                            "Interview Assistance",
-                            style: GoogleFonts.abel(fontSize: 18),
-                            overflow: TextOverflow.ellipsis,
-                            maxLines: 5,
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Text(
-                            "VISA interview is one of the biggest steps and a simple mistake in this step may prevent students from achieving their dreams. We provide expert assistance during this phase and help students by applying for interviews, scheduling interview dates, fees payment, and also help students prepare for interview questions.",
-                            style: GoogleFonts.abel(fontSize: 18),
-                            overflow: TextOverflow.ellipsis,
-                            maxLines: 5,
-                            textAlign: TextAlign.justify,
+                          child: Column(crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Row(mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.school, color: Colors.red,),
+                                  SizedBox(width: 10,),
+                                  Text(
+                                      "India Office",
+                                      softWrap: true,
+                                      style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                                  ),
+                                ],
+                              ),
+
+                              SizedBox(height: 10,),
+                              Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.domain, color: Colors.blue,),
+                                  SizedBox(width: 10,),
+                                  Expanded(
+                                    child: Text(
+                                        "Plot: X, Block: X, Kolkata, India 1229",
+                                        softWrap: true,
+                                        maxLines: 3,
+                                        style: TextStyle(fontSize: 18.0,)
+                                    ),
+                                  ),
+                                ],
+                              ),
+
+                              SizedBox(height: 10,),
+                              Row(mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.support_agent, color: Colors.green),
+                                  SizedBox(width: 10,),
+                                  Text(
+                                      "+91 17336545464",
+                                      softWrap: true,
+                                      style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500)
+                                  ),
+                                ],
+                              ),
+                            ],
                           ),
                         ),
                       ],
@@ -133,26 +189,54 @@ class _ContactSectorState extends State<ContactSector> {
                     child: Column(
                       children: <Widget>[
                         Image.asset(
-                          "assets/images/doccumantation.png",
+                          "assets/images/dhakaoffice.jpg",
                           fit: BoxFit.contain,
                         ),
                         Padding(
                           padding: const EdgeInsets.all(20.0),
-                          child: Text(
-                            "Documentation",
-                            style: GoogleFonts.abel(fontSize: 18),
-                            overflow: TextOverflow.ellipsis,
-                            maxLines: 5,
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Text(
-                            "Documentation is one of the most important aspects of applying for foreign education. We can help students create documentation that makes sure universities accept the applications and also make sure VISA interviews are not rejected. We make sure that students do not miss any important documents during application process.",
-                            style: GoogleFonts.abel(fontSize: 18),
-                            overflow: TextOverflow.ellipsis,
-                            maxLines: 5,
-                            textAlign: TextAlign.justify,
+                          child: Column(crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Row(mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.school, color: Colors.red,),
+                                  SizedBox(width: 10,),
+                                  Text(
+                                      "Bangladesh Office",
+                                      softWrap: true,
+                                      style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                                  ),
+                                ],
+                              ),
+
+                              SizedBox(height: 10,),
+                              Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.domain, color: Colors.blue,),
+                                  SizedBox(width: 10,),
+                                  Expanded(
+                                    child: Text(
+                                        "Plot: X, Block: X, Dhaka, Bangladesh 1229",
+                                        softWrap: true,
+                                        maxLines: 3,
+                                        style: TextStyle(fontSize: 18.0,)
+                                    ),
+                                  ),
+                                ],
+                              ),
+
+                              SizedBox(height: 10,),
+                              Row(mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.support_agent, color: Colors.green),
+                                  SizedBox(width: 10,),
+                                  Text(
+                                      "+880 17336545464",
+                                      softWrap: true,
+                                      style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500)
+                                  ),
+                                ],
+                              ),
+                            ],
                           ),
                         ),
                       ],
