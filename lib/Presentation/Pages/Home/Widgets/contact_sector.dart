@@ -61,7 +61,7 @@ class _ContactSectorState extends State<ContactSector> {
                     child: Column(
                       children: <Widget>[
                         Image.asset(
-                          "assets/images/german.jpg",
+                          "assets/images/germanoffice.jpg",
                           fit: BoxFit.contain,
                         ),
                         Padding(
@@ -125,7 +125,7 @@ class _ContactSectorState extends State<ContactSector> {
                     child: Column(
                       children: <Widget>[
                         Image.asset(
-                          "assets/images/dhakaoffice.jpg",
+                          "assets/images/indiaoffice.jpg",
                           fit: BoxFit.contain,
                         ),
                         Padding(
