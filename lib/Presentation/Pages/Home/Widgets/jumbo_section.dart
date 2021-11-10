@@ -30,7 +30,7 @@ class _JumboSectionState extends State<JumboSection> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            height: context.height * 0.5,
+            height: context.width > 1080 ? context.height * 0.5 : 160,
             decoration: BoxDecoration(
               color: Theme.of(context).backgroundColor.withOpacity(0.75),
               borderRadius: BorderRadius.circular(15),
@@ -42,12 +42,25 @@ class _JumboSectionState extends State<JumboSection> {
                 Container(),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 50.0),
-                  child: Text(
+                  child: context.width > 1080 ?
+                  Text(
                     "Come and see your dreams coming true with us.",
                     style: GoogleFonts.robotoTextTheme()
                         .headline2!
                         .copyWith(fontWeight: FontWeight.w600, color: Colors.black87, fontSize: 50),
                     textAlign: TextAlign.center,
+                  ) :
+                  Column(
+                    children: [
+                      SizedBox(height: 10,),
+                      Text(
+                        "Come and see your dreams coming true with us.",
+                        style: GoogleFonts.robotoTextTheme()
+                            .headline2!
+                            .copyWith(fontWeight: FontWeight.w600, color: Colors.black87, fontSize: 18),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
                   ),
                 ),
                 AppConstrains.height40,

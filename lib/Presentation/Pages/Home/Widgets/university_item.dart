@@ -1,6 +1,7 @@
 import 'package:EUIES_Web/Core/Utilities/AppColors.dart';
 import 'package:EUIES_Web/Core/Utilities/AppConstrains.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/context_extensions.dart';
 
 class UniversityItem extends StatefulWidget {
   late final String universityName;
@@ -22,11 +23,10 @@ class _UniversityItemState extends State<UniversityItem> {
             borderRadius: BorderRadius.circular(15),
             child: Image.asset(
               "assets/${widget.imageLink}",
-              height: 300,
+              height: context.width > 720 ? 400 : 400,
             ),
           ),
         ),
-        AppConstrains.height25,
         Text(
           "${widget.universityName}",
           style: Theme.of(context)

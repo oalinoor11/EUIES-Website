@@ -61,14 +61,13 @@ class _UniversitySectionState extends State<UniversitySection> {
                         "Study Abroad",
                         style: context.width > 720
                             ? Theme.of(context).textTheme.headline4
-                            : Theme.of(context).textTheme.headline6,
+                            : Theme.of(context).textTheme.headline4,
                         softWrap: true,
                         textAlign: TextAlign.center,
                       ),
                     ],
                   ),
                 ),
-          AppConstrains.height40,
           GFItemsCarousel(
             rowCount: context.width >= 1080
                 ? 4

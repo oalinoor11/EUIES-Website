@@ -58,22 +58,14 @@ class _HomePageState extends State<HomePage> {
                   curve: Curves.easeIn);
             },
           ),
-          height: context.width > 1080 ? 150 : 120,
+          height: context.width > 1080 ? 150 : 100,
         ),
         toolbarHeight: context.width > 1080 ? 120 : null,
         actions: context.width > 1080 ? AppMenuItems() : null,
         backgroundColor: appBarBackGroundColor,
       ),
       drawer: context.width <= 1080
-          ? Drawer(
-              child: Container(
-                color: Colors.black54,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: AppDrawerItems(),
-                ),
-              ),
-            )
+          ? null
           : null,
       extendBodyBehindAppBar: true,
       body: SingleChildScrollView(

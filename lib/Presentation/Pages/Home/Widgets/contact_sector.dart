@@ -42,208 +42,213 @@ class _ContactSectorState extends State<ContactSector> {
             ),
           ),
           SizedBox(height: 20,),
-          Container(
-            padding: EdgeInsets.only(
-              left: context.width * 0,
-              right: context.width * 0,
-              bottom: 80,
-            ),
-            height: 600,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SizedBox(
-                  width: 350,
-                  child: Card(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10)),
-                    elevation: 10,
-                    child: Column(
-                      children: <Widget>[
-                        Image.asset(
-                          "assets/images/germanoffice.jpg",
-                          fit: BoxFit.contain,
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Row(mainAxisAlignment: MainAxisAlignment.start,
+          SingleChildScrollView(scrollDirection: Axis.horizontal,
+            child: Container(
+              padding: EdgeInsets.only(
+                left: context.width * 0,
+                right: context.width * 0,
+                bottom: 80,
+              ),
+              height: 573,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 20.0, right: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      width: 350,
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        elevation: 10,
+                        child: Column(
+                          children: <Widget>[
+                            Image.asset(
+                              "assets/images/germanoffice.jpg",
+                              fit: BoxFit.contain,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(20.0),
+                              child: Column(crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Icon(Icons.school, color: Colors.red,),
-                                  SizedBox(width: 10,),
-                                  Text(
-                                      "Germany Office",
-                                      softWrap: true,
-                                      style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                                  Row(mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Icon(Icons.school, color: Colors.red,),
+                                      SizedBox(width: 10,),
+                                      Text(
+                                          "Germany Office",
+                                          softWrap: true,
+                                          style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                                      ),
+                                    ],
                                   ),
-                                ],
-                              ),
 
-                              SizedBox(height: 10,),
-                              Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Icon(Icons.domain, color: Colors.blue,),
-                                  SizedBox(width: 10,),
-                                  Expanded(
-                                    child: Text(
-                                        "Plot: X, Block: X, Berlin, Germany 1229",
-                                        softWrap: true,
-                                        maxLines: 3,
-                                        style: TextStyle(fontSize: 18.0,)
-                                    ),
+                                  SizedBox(height: 10,),
+                                  Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Icon(Icons.domain, color: Colors.blue,),
+                                      SizedBox(width: 10,),
+                                      Expanded(
+                                        child: Text(
+                                            "Plot: X, Block: X, Berlin, Germany 1229",
+                                            softWrap: true,
+                                            maxLines: 3,
+                                            style: TextStyle(fontSize: 18.0,)
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                ],
-                              ),
 
-                              SizedBox(height: 10,),
-                              Row(mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Icon(Icons.support_agent, color: Colors.green),
-                                  SizedBox(width: 10,),
-                                  Text(
-                                      "+49 17336545464",
-                                      softWrap: true,
-                                      style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500)
+                                  SizedBox(height: 10,),
+                                  Row(mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Icon(Icons.support_agent, color: Colors.green),
+                                      SizedBox(width: 10,),
+                                      Text(
+                                          "+49 17336545464",
+                                          softWrap: true,
+                                          style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500)
+                                      ),
+                                    ],
                                   ),
                                 ],
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
                     ),
-                  ),
-                ),
-                AppConstrains.width20,
-                SizedBox(
-                  width: 350,
-                  child: Card(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10)),
-                    elevation: 10,
-                    child: Column(
-                      children: <Widget>[
-                        Image.asset(
-                          "assets/images/indiaoffice.jpg",
-                          fit: BoxFit.contain,
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Row(mainAxisAlignment: MainAxisAlignment.start,
+                    AppConstrains.width20,
+                    SizedBox(
+                      width: 350,
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        elevation: 10,
+                        child: Column(
+                          children: <Widget>[
+                            Image.asset(
+                              "assets/images/indiaoffice.jpg",
+                              fit: BoxFit.contain,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(20.0),
+                              child: Column(crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Icon(Icons.school, color: Colors.red,),
-                                  SizedBox(width: 10,),
-                                  Text(
-                                      "India Office",
-                                      softWrap: true,
-                                      style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                                  Row(mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Icon(Icons.school, color: Colors.red,),
+                                      SizedBox(width: 10,),
+                                      Text(
+                                          "India Office",
+                                          softWrap: true,
+                                          style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                                      ),
+                                    ],
                                   ),
-                                ],
-                              ),
 
-                              SizedBox(height: 10,),
-                              Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Icon(Icons.domain, color: Colors.blue,),
-                                  SizedBox(width: 10,),
-                                  Expanded(
-                                    child: Text(
-                                        "Plot: X, Block: X, Kolkata, India 1229",
-                                        softWrap: true,
-                                        maxLines: 3,
-                                        style: TextStyle(fontSize: 18.0,)
-                                    ),
+                                  SizedBox(height: 10,),
+                                  Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Icon(Icons.domain, color: Colors.blue,),
+                                      SizedBox(width: 10,),
+                                      Expanded(
+                                        child: Text(
+                                            "Plot: X, Block: X, Kolkata, India 1229",
+                                            softWrap: true,
+                                            maxLines: 3,
+                                            style: TextStyle(fontSize: 18.0,)
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                ],
-                              ),
 
-                              SizedBox(height: 10,),
-                              Row(mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Icon(Icons.support_agent, color: Colors.green),
-                                  SizedBox(width: 10,),
-                                  Text(
-                                      "+91 17336545464",
-                                      softWrap: true,
-                                      style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500)
+                                  SizedBox(height: 10,),
+                                  Row(mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Icon(Icons.support_agent, color: Colors.green),
+                                      SizedBox(width: 10,),
+                                      Text(
+                                          "+91 17336545464",
+                                          softWrap: true,
+                                          style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500)
+                                      ),
+                                    ],
                                   ),
                                 ],
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
                     ),
-                  ),
-                ),
-                AppConstrains.width20,
-                SizedBox(
-                  width: 350,
-                  child: Card(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10)),
-                    elevation: 10,
-                    child: Column(
-                      children: <Widget>[
-                        Image.asset(
-                          "assets/images/dhakaoffice.jpg",
-                          fit: BoxFit.contain,
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Row(mainAxisAlignment: MainAxisAlignment.start,
+                    AppConstrains.width20,
+                    SizedBox(
+                      width: 350,
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                        elevation: 10,
+                        child: Column(
+                          children: <Widget>[
+                            Image.asset(
+                              "assets/images/dhakaoffice.jpg",
+                              fit: BoxFit.contain,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(20.0),
+                              child: Column(crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Icon(Icons.school, color: Colors.red,),
-                                  SizedBox(width: 10,),
-                                  Text(
-                                      "Bangladesh Office",
-                                      softWrap: true,
-                                      style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                                  Row(mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Icon(Icons.school, color: Colors.red,),
+                                      SizedBox(width: 10,),
+                                      Text(
+                                          "Bangladesh Office",
+                                          softWrap: true,
+                                          style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+                                      ),
+                                    ],
                                   ),
-                                ],
-                              ),
 
-                              SizedBox(height: 10,),
-                              Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Icon(Icons.domain, color: Colors.blue,),
-                                  SizedBox(width: 10,),
-                                  Expanded(
-                                    child: Text(
-                                        "Plot: X, Block: X, Dhaka, Bangladesh 1229",
-                                        softWrap: true,
-                                        maxLines: 3,
-                                        style: TextStyle(fontSize: 18.0,)
-                                    ),
+                                  SizedBox(height: 10,),
+                                  Row(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Icon(Icons.domain, color: Colors.blue,),
+                                      SizedBox(width: 10,),
+                                      Expanded(
+                                        child: Text(
+                                            "Plot: X, Block: X, Dhaka, Bangladesh 1229",
+                                            softWrap: true,
+                                            maxLines: 3,
+                                            style: TextStyle(fontSize: 18.0,)
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                ],
-                              ),
 
-                              SizedBox(height: 10,),
-                              Row(mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Icon(Icons.support_agent, color: Colors.green),
-                                  SizedBox(width: 10,),
-                                  Text(
-                                      "+880 17336545464",
-                                      softWrap: true,
-                                      style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500)
+                                  SizedBox(height: 10,),
+                                  Row(mainAxisAlignment: MainAxisAlignment.start,
+                                    children: [
+                                      Icon(Icons.support_agent, color: Colors.green),
+                                      SizedBox(width: 10,),
+                                      Text(
+                                          "+880 17336545464",
+                                          softWrap: true,
+                                          style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500)
+                                      ),
+                                    ],
                                   ),
                                 ],
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
                     ),
-                  ),
+                  ],
                 ),
-              ],
+              ),
             ),
           ),
         ],
