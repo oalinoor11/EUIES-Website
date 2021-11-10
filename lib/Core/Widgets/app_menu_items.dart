@@ -61,7 +61,7 @@ List<Widget> AppMenuItems() {
       child: GFButton(
         onPressed: () {
           // Get.toNamed(AppRoutes.APPLYSCREEN);
-          launch("https://docs.google.com/forms/d/19nuD1ExVPrX2iBTT0-xt1kXsFtTvbuM0JKRHxi0l5t4/prefill");
+          launch("https://docs.google.com/forms/d/e/1FAIpQLSfI-bnrU1TdVL2U8cxvKl9xRg0gKcc1ZXIJR5tRaYlAdDTduQ/viewform?pli=1");
         },
         color: AppColours.RED,
         text: "Apply for Scholarship",
