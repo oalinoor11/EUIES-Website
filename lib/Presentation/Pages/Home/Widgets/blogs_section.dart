@@ -46,17 +46,9 @@ class _ServicesSectionState extends State<ServicesSection> {
             ),
           ),
           SizedBox(height: 20,),
-          SingleChildScrollView(scrollDirection: Axis.horizontal,
-            child: Container(
-              padding: EdgeInsets.only(
-                left: context.width * 0,
-                right: context.width * 0,
-                bottom: 80,
-              ),
-              height: 573,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 20.0, right: 20),
-                child: Row(
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(
@@ -168,8 +160,6 @@ class _ServicesSectionState extends State<ServicesSection> {
                     ),
                   ],
                 ),
-              ),
-            ),
           ),
         ],
       ),

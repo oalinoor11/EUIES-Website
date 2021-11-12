@@ -42,7 +42,7 @@ class _ContactSectorState extends State<ContactSector> {
             ),
           ),
           SizedBox(height: 20,),
-          SingleChildScrollView(scrollDirection: Axis.horizontal,
+          SingleChildScrollView(
             child: Container(
               padding: EdgeInsets.only(
                 left: context.width * 0,
